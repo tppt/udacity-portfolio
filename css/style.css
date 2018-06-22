@@ -1,0 +1,117 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background: gray;
+    color: #fff;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+#title {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../imgs/background-code.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 2px 2px 5px black;
+}
+
+#title .section-title {
+    margin-top: 40vh;
+    font-size: 2em;
+}
+
+#about {
+    width: 100%;
+}
+
+#about p {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#skills {
+    background-color: #fafafa;
+    width: 100%;
+}
+
+#projects {
+    width: 100%;
+}
+
+#projects .panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.panel {
+    background-color: #fff;
+    margin: 0 auto 30px auto;
+    width: 70%;
+    box-shadow: 2px 2px 5px lightgray;
+    padding: 10px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.projects-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-container {
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    margin: 1%;
+    width: 40%;
+}
+
+.project-container img {
+    width: 100%;
+}
+
+.project-container .links {
+    text-align: center;
+}
+
+@media screen and (max-width: 765px) {
+    #skills img {
+        width: 28%;
+        height: auto;
+        max-width: 150px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .project-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 766px) {
+    #skills .panel {
+        display: flex;
+        justify-content: space-around;
+    }
+}
